@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyecto2_2022.HelloController">
+   <children>
+      <Pane fx:id="pnNuevo" prefHeight="464.0" prefWidth="698.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label layoutX="67.0" layoutY="61.0" prefHeight="17.0" prefWidth="47.0" text="Titulo" />
+            <Label layoutX="67.0" layoutY="93.0" prefHeight="17.0" prefWidth="68.0" text="Descripcion" />
+            <TextField fx:id="txTitulo" layoutX="156.0" layoutY="57.0" />
+            <TextField fx:id="txDescripcion" layoutX="156.0" layoutY="89.0" />
+            <Button fx:id="btCancelar" layoutX="156.0" layoutY="149.0" mnemonicParsing="false" onAction="#homepage" text="Cancelar" />
+            <Button fx:id="btSiguiente" layoutX="246.0" layoutY="149.0" mnemonicParsing="false" onAction="#agregarCuestionario" text="Siguiente" />
+         </children>
+      </Pane>
+      <Pane fx:id="pnIngresar" prefHeight="464.0" prefWidth="698.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label layoutX="124.0" layoutY="49.0" text="Pin" />
+            <Label layoutX="124.0" layoutY="82.0" text="Sobrenombre" />
+            <TextField fx:id="flPin" layoutX="182.0" layoutY="45.0" prefHeight="25.0" prefWidth="112.0" />
+            <TextField fx:id="flSobrenombre" layoutX="210.0" layoutY="78.0" prefHeight="25.0" prefWidth="112.0" />
+            <Button fx:id="btIngresar" layoutX="214.0" layoutY="167.0" mnemonicParsing="false" onAction="#Evaluaciones" text="Ingresar" />
+         </children>
+      </Pane>
+      <Pane fx:id="pnAgregar" prefHeight="464.0" prefWidth="698.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label layoutX="134.0" layoutY="25.0" prefHeight="17.0" prefWidth="51.0" text="Pregunta" />
+            <TextField fx:id="txaddPregunta" layoutX="233.0" layoutY="20.0" prefHeight="22.0" prefWidth="284.0" />
+            <Label layoutX="134.0" layoutY="147.0" text="Respuestas" />
+            <CheckBox fx:id="chRespuesta1" layoutX="241.0" layoutY="156.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chRespuesta2" layoutX="241.0" layoutY="190.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chRespuesta3" layoutX="241.0" layoutY="232.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chRespuesta4" layoutX="241.0" layoutY="268.0" mnemonicParsing="false" />
+            <Label layoutX="134.0" layoutY="59.0" prefHeight="17.0" prefWidth="149.0" text="Tiempo limite en segundos" />
+            <Label layoutX="134.0" layoutY="99.0" prefHeight="17.0" prefWidth="51.0" text="Puntos" />
+            <TextField fx:id="txaddPuntos" layoutX="207.0" layoutY="95.0" prefHeight="25.0" prefWidth="54.0" />
+            <TextField fx:id="txRespuesta1" layoutX="295.0" layoutY="152.0" prefHeight="25.0" prefWidth="126.0" />
+            <TextField fx:id="txRespuesta2" layoutX="295.0" layoutY="186.0" prefHeight="25.0" prefWidth="126.0" />
+            <TextField fx:id="txRespuesta3" layoutX="295.0" layoutY="228.0" prefHeight="25.0" prefWidth="126.0" />
+            <TextField fx:id="txRespuesta4" layoutX="295.0" layoutY="264.0" prefHeight="25.0" prefWidth="126.0" />
+            <TextField fx:id="txaddTiempo" layoutX="295.0" layoutY="55.0" prefHeight="25.0" prefWidth="54.0" />
+            <Button fx:id="btAgregarPregunta" layoutX="323.0" layoutY="339.0" mnemonicParsing="false" onAction="#agregarCuestionario" text="Agregar" />
+         </children></Pane>
+      <Pane fx:id="pnModificar" layoutX="10.0" layoutY="10.0" prefHeight="464.0" prefWidth="698.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label layoutX="134.0" layoutY="12.0" prefHeight="17.0" prefWidth="112.0" text="Pregunta a modificar" />
+            <TextField fx:id="txlookPregunta" layoutX="257.0" layoutY="8.0" onAction="#modificarPreguntas" prefHeight="22.0" prefWidth="284.0" />
+            <Label layoutX="134.0" layoutY="195.0" text="Respuestas" />
+            <CheckBox fx:id="chRespuesta11" layoutX="241.0" layoutY="204.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chRespuesta21" layoutX="241.0" layoutY="238.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chRespuesta31" layoutX="241.0" layoutY="280.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chRespuesta41" layoutX="241.0" layoutY="316.0" mnemonicParsing="false" />
+            <Label layoutX="134.0" layoutY="107.0" prefHeight="17.0" prefWidth="149.0" text="Tiempo limite en segundos" />
+            <Label layoutX="134.0" layoutY="147.0" prefHeight="17.0" prefWidth="51.0" text="Puntos" />
+            <TextField fx:id="txaddPuntos1" layoutX="207.0" layoutY="143.0" prefHeight="25.0" prefWidth="54.0" />
+            <TextField fx:id="txRespuesta11" layoutX="295.0" layoutY="200.0" prefHeight="25.0" prefWidth="126.0" />
+            <TextField fx:id="txRespuesta21" layoutX="295.0" layoutY="234.0" prefHeight="25.0" prefWidth="126.0" />
+            <TextField fx:id="txRespuesta31" layoutX="295.0" layoutY="276.0" prefHeight="25.0" prefWidth="126.0" />
+            <TextField fx:id="txRespuesta41" layoutX="295.0" layoutY="312.0" prefHeight="25.0" prefWidth="126.0" />
+            <TextField fx:id="txaddTiempo1" layoutX="295.0" layoutY="103.0" prefHeight="25.0" prefWidth="54.0" />
+            <Button fx:id="btModificando" layoutX="323.0" layoutY="387.0" mnemonicParsing="false" onAction="#modificarPreguntas" text="Modificar" />
+            <Label layoutX="134.0" layoutY="51.0" prefHeight="17.0" prefWidth="94.0" text="Nueva Pregunta" />
+            <TextField fx:id="txaddnPregunta" layoutX="257.0" layoutY="47.0" prefHeight="22.0" prefWidth="284.0" />
+            <Button fx:id="btBuscar" layoutX="566.0" layoutY="8.0" mnemonicParsing="false" onAction="#modificarPreguntas" text="Buscar" />
+         </children>
+      </Pane>
+      <Pane fx:id="pnActivar" layoutY="-3.0" prefHeight="464.0" prefWidth="698.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label fx:id="txTitulobuscador" layoutX="34.0" layoutY="103.0" prefHeight="17.0" prefWidth="173.0" text="Titulo del cuestionario a Activar" />
+            <TextField fx:id="flActivar" layoutX="221.0" layoutY="99.0" onAction="#modificarPreguntas" prefHeight="22.0" prefWidth="284.0" />
+            <Button fx:id="btActivando" layoutX="551.0" layoutY="99.0" mnemonicParsing="false" onAction="#agregarCuestionario" text="Activar" />
+         </children>
+      </Pane>
+      <Pane fx:id="pnBorrar" layoutX="10.0" layoutY="7.0" prefHeight="464.0" prefWidth="698.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label fx:id="txTitulobuscador1" layoutX="34.0" layoutY="103.0" prefHeight="17.0" prefWidth="173.0" text="Pregunta a borrar" />
+            <TextField fx:id="flBorrar" layoutX="221.0" layoutY="99.0" onAction="#modificarPreguntas" prefHeight="22.0" prefWidth="284.0" />
+            <Button fx:id="btBorrando" layoutX="551.0" layoutY="99.0" mnemonicParsing="false" onAction="#modificarPreguntas" text="Borrar" />
+         </children>
+      </Pane>
+      <Pane fx:id="pnDetalle" prefHeight="464.0" prefWidth="698.0" style="-fx-background-color: #fff;">
+         <children>
+            <Circle fill="#d0d5da" layoutX="593.0" layoutY="332.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+            <Button fx:id="btaddPregunta" layoutX="571.0" layoutY="313.0" mnemonicParsing="false" onAction="#agregarCuestionario" opacity="0.0" prefHeight="37.0" prefWidth="47.0" text="Button" textFill="#f5f5f505" />
+            <Label fx:id="laTitulo" layoutX="290.0" layoutY="14.0" prefHeight="17.0" prefWidth="54.0" text="Titulo" />
+            <Label fx:id="laDescripcion" layoutX="137.0" layoutY="78.0" prefHeight="17.0" prefWidth="396.0" text="Descripcion" />
+            <TableView fx:id="tvPreguntas" layoutX="119.0" layoutY="254.0" prefHeight="179.0" prefWidth="424.0">
+              <columns>
+                <TableColumn fx:id="tcPregunta" prefWidth="133.0" text="Pregunta" />
+                <TableColumn fx:id="tcTiempo" prefWidth="136.0" text="Tiempo Limite" />
+                  <TableColumn fx:id="tcPunteo" prefWidth="154.0" text="Punteo" />
+              </columns>
+            </TableView>
+            <Line endX="66.0" layoutX="541.0" layoutY="331.0" startX="37.5" />
+            <Line endX="37.5" endY="28.0" layoutX="555.0" layoutY="317.0" startX="37.5" />
+            <HBox layoutX="239.0" layoutY="100.0" prefHeight="37.0" prefWidth="149.0" spacing="10.0">
+               <children>
+                  <Button fx:id="btModificar" mnemonicParsing="false" onAction="#modificarPreguntas" text="Modificar" />
+                  <Button fx:id="btBorrar" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#modificarPreguntas" text="Borrar" />
+               </children></HBox>
+            <Button fx:id="btHome" layoutX="461.0" layoutY="125.0" mnemonicParsing="false" onAction="#homepage" text="HOME" />
+         </children></Pane>
+      <Pane fx:id="pnClonar" layoutX="20.0" layoutY="17.0" prefHeight="464.0" prefWidth="698.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label fx:id="txTitulobuscador11" layoutX="34.0" layoutY="103.0" prefHeight="17.0" prefWidth="173.0" text="PIN del Cuestionario " />
+            <TextField fx:id="flClonar" layoutX="221.0" layoutY="99.0" onAction="#modificarPreguntas" prefHeight="22.0" prefWidth="284.0" />
+            <Button fx:id="btClonando" layoutX="551.0" layoutY="99.0" mnemonicParsing="false" onAction="#agregarCuestionario" text="Clonar" />
+         </children>
+      </Pane>
+      <Pane fx:id="pnEvaluar" layoutX="-2.0" layoutY="-2.0" prefHeight="470.0" prefWidth="706.0" style="-fx-background-color: #fff;">
+         <children>
+            <Label fx:id="txTituloEvaluar" alignment="CENTER" layoutX="199.0" layoutY="44.0" prefHeight="17.0" prefWidth="284.0" text="Titulo del cuestionario" />
+            <Label layoutX="134.0" layoutY="195.0" text="Opciones" />
+            <CheckBox fx:id="chRespondiendo1" layoutX="241.0" layoutY="204.0" mnemonicParsing="false" text="opcion1" />
+            <CheckBox fx:id="chRespondiendo2" layoutX="241.0" layoutY="238.0" mnemonicParsing="false" text="opcion2" />
+            <CheckBox fx:id="chRespondiendo3" layoutX="241.0" layoutY="280.0" mnemonicParsing="false" text="opcion3" />
+            <CheckBox fx:id="chRespondiendo4" layoutX="241.0" layoutY="316.0" mnemonicParsing="false" text="opcion4" />
+            <Label fx:id="txPreguntaEvaluar" alignment="CENTER" layoutX="122.0" layoutY="143.0" prefHeight="17.0" prefWidth="454.0" text="preguntando" textAlignment="CENTER" />
+            <Label alignment="CENTER" layoutX="35.0" layoutY="143.0" prefHeight="17.0" prefWidth="87.0" text="Pregunta:" textAlignment="CENTER" />
+            <Label fx:id="lbResultado" contentDisplay="RIGHT" layoutX="541.0" layoutY="382.0" prefHeight="17.0" prefWidth="112.0" text="Puntos" />
+            <Label fx:id="lbPuntuacion" layoutX="565.0" layoutY="321.0" prefHeight="54.0" prefWidth="64.0" text="Puntos">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="btContinuando" layoutX="414.0" layoutY="200.0" mnemonicParsing="false" onAction="#Evaluaciones" text="Continuar" />
+         </children>
+      </Pane>
+      <Pane fx:id="pnCuestionario" layoutX="6.0" layoutY="7.0" onMouseClicked="#homepage" prefHeight="476.0" prefWidth="706.0" style="-fx-background-color: #fff;">
+         <children>
+            <Circle fx:id="crAgregar" fill="#b1b7bc" layoutX="595.0" layoutY="324.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line endX="-75.0" layoutX="682.0" layoutY="323.0" startX="-100.0" />
+            <Line endX="-100.0" endY="21.0" layoutX="695.0" layoutY="312.0" startX="-100.0" />
+            <Button fx:id="btAgregar" layoutX="569.0" layoutY="312.0" mnemonicParsing="false" onAction="#homepage" opacity="0.0" text="Button" textFill="#00000019" />
+            <HBox alignment="CENTER" layoutX="158.0" layoutY="14.0" prefHeight="30.0" prefWidth="319.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btActivar" mnemonicParsing="false" onAction="#homepage" text="Activar" />
+                  <Button fx:id="btClonar" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#homepage" text="Clonar" />
+                  <Button fx:id="btEvaluar" layoutX="62.0" layoutY="10.0" mnemonicParsing="false" onAction="#homepage" text="Evaluar" />
+                  <Button fx:id="btTop3" layoutX="114.0" layoutY="10.0" mnemonicParsing="false" onAction="#top3pdf" text="Top 3" />
+               </children>
+            </HBox>
+            <TableView fx:id="tvCuestionarios" layoutX="129.0" layoutY="85.0" prefHeight="200.0" prefWidth="396.0">
+              <columns>
+                <TableColumn fx:id="tcPin" prefWidth="99.0" text="Pin" />
+                <TableColumn fx:id="tcNombre" prefWidth="152.0" text="Nombre" />
+                  <TableColumn fx:id="tcDescripcion" prefWidth="144.0" text="Descripcion" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</Pane>
